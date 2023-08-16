@@ -4,4 +4,19 @@
     <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Services\Implementations\" />
+    <None Remove="Types\Incentives\" />
+    <None Remove="Types\Readers\" />
+    <None Remove="Data\Implementations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\Implementations\" />
+    <Folder Include="Types\Incentives\" />
+    <Folder Include="Types\Readers\" />
+    <Folder Include="Data\Implementations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.143" />
+  </ItemGroup>
 </Project>
